@@ -1,4 +1,5 @@
 # LBNet-Pytorch: Lightweight Bimodal Network for Single-Image Super-Resolution via Symmetric CNN and Recursive Transformer
+
 ### This repository is an official PyTorch implementation of the paper "Lightweight Bimodal Network for Single-Image Super-Resolution via Symmetric CNN and Recursive Transformer".
 
 
@@ -26,8 +27,9 @@ All our SR images can be downloaded from <a href="https://pan.baidu.com/s/1BfATK
 
 All pretrained model can be found in <a href="https://github.com/wzx0826/LBNet/tree/main/test_model">IJCAI2022_LBNet</a>.
 
-The following PSNR/SSIMs are evaluated on Matlab R2017a and the code can be referred to [Evaluate_PSNR_SSIM.m]
-(https://github.com/wzx0826/LBNet/blob/main/Evaluate_PSNR_SSIM.m).
+All our Supplementary materials can be downloaded from <a https://pan.baidu.com/s/1JdnWHy3cwdwPpSC2G0L_ag ">Supplementary materials</a>.[百度网盘][提取码:vi3i]
+
+The following PSNR/SSIMs are evaluated on Matlab R2017a and the code can be referred to <a href="https://github.com/wzx0826/LBNet/blob/main/Evaluate_PSNR_SSIM.m">Evaluate_PSNR_SSIM.m</a>.
 
 ##Training
 
@@ -82,6 +84,16 @@ LBNet-T        |x3|407K|22.0G|34.33/0.9264|30.25/0.8402|29.05/0.8042|28.06/0.848
 LBNet          |x3|736K|68.4G|34.47/0.9277|30.38/0.8417|29.13/0.8061|28.42/0.8559|33.82/0.9460
 LBNet-T        |x4|410K|12.6G|32.08/0.8933|28.54/0.7802|27.54/0.7358|26.00/0.7819|30.37/0.9059
 LBNet          |x4|742K|38.9G|32.29/0.8960|28.68/0.7832|27.62/0.7382|26.27/0.7906|30.76/0.9111
+
+## Visual comparison
+
+SR images reconstructed by our LBNet have richer detailed textures with better visual effects.
+<p align="center">
+<img src="imgs/LBNet-Patch-X3.drawio.png" width="600px" height="400px"/>
+</p>
+<p align="center">
+<img src="imgs/LBNet-Patch.drawio.png" width="600px" height="400px"/>
+</p>
 
 ## Model complexity
 
