@@ -2,6 +2,7 @@
 
 ### This repository is an official PyTorch implementation of the paper "Lightweight Bimodal Network for Single-Image Super-Resolution via Symmetric CNN and Recursive Transformer".
 
+<a href="https://arxiv.org/abs/2204.13286">Paper</a>. | <a href="https://guangweigao.github.io/IJCAI22/LBNet.html">Project</a>.
 
 ## Dependencies
 ```
@@ -23,11 +24,11 @@ We used DIV2K dataset to train our model. Please download it from <a href="https
 You can evaluate our models on several widely used [benchmark datasets](https://cv.snu.ac.kr/research/EDSR/benchmark.tar), including Set5, Set14, B100, Urban100, Manga109. Note that using an old PyTorch version (earlier than 1.1) would yield wrong results.
 
 ## Results
-All our SR images can be downloaded from <a href="https://pan.baidu.com/s/1BfATKktSv9jk3LlWPRQRZg">here</a>.[百度网盘][提取码:ymii]
+All our SR images can be downloaded from <a href="https://pan.baidu.com/s/1BfATKktSv9jk3LlWPRQRZg">Results</a>.[百度网盘][提取码:ymii]
 
 All pretrained model can be found in <a href="https://github.com/wzx0826/LBNet/tree/main/test_model">IJCAI2022_LBNet</a>.
 
-All our Supplementary materials can be downloaded from <a https://pan.baidu.com/s/1JdnWHy3cwdwPpSC2G0L_ag ">Supplementary materials</a>.[百度网盘][提取码:vi3i]
+All our Supplementary materials can be downloaded from <a https://pan.baidu.com/s/1JdnWHy3cwdwPpSC2G0L_ag ">Supplementary_materials</a>.[百度网盘][提取码:vi3i]
 
 The following PSNR/SSIMs are evaluated on Matlab R2017a and the code can be referred to <a href="https://github.com/wzx0826/LBNet/blob/main/Evaluate_PSNR_SSIM.m">Evaluate_PSNR_SSIM.m</a>.
 
