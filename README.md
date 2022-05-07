@@ -28,7 +28,7 @@ All our SR images can be downloaded from <a href="https://pan.baidu.com/s/1BfATK
 
 All pretrained model can be found in <a href="https://github.com/wzx0826/LBNet/tree/main/test_model">IJCAI2022_LBNet</a>.
 
-All our Supplementary materials can be downloaded from <a https://pan.baidu.com/s/1JdnWHy3cwdwPpSC2G0L_ag ">Supplementary_materials</a>.[百度网盘][提取码:vi3i]
+All our Supplementary materials can be downloaded from <a https://pan.baidu.com/s/1JdnWHy3cwdwPpSC2G0L_ag">Supplementary_materials</a>.[百度网盘][提取码:vi3i]
 
 The following PSNR/SSIMs are evaluated on Matlab R2017a and the code can be referred to <a href="https://github.com/wzx0826/LBNet/blob/main/Evaluate_PSNR_SSIM.m">Evaluate_PSNR_SSIM.m</a>.
 
