@@ -2,7 +2,7 @@
 
 ### This repository is an official PyTorch implementation of the paper "Lightweight Bimodal Network for Single-Image Super-Resolution via Symmetric CNN and Recursive Transformer".
 
-<a href="https://arxiv.org/abs/2204.13286">Paper</a>. | <a href="https://guangweigao.github.io/IJCAI22/LBNet.html">Project</a>.
+<a href="https://arxiv.org/abs/2204.13286">Paper</a> | <a href="https://guangweigao.github.io/IJCAI22/LBNet.html">Project</a>
 
 ## Dependencies
 ```
