@@ -41,8 +41,8 @@ parser.add_argument('--n_blocks', type=int, default=30,
 parser.add_argument('--n_feats', type=int, default=32,
                     help='number of feature maps')
 
-parser.add_argument('--num_steps', type=int, default=10,
-                    help='number of RCAB')
+parser.add_argument('--num_heads', type=int, default=8,
+                    help='The number of multi-head self-attention heads in the transformer')
 parser.add_argument('--negval', type=float, default=0.2, 
                     help='Negative value parameter for Leaky ReLU')
 parser.add_argument('--test_every', type=int, default=1000,
