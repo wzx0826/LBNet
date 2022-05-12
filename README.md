@@ -47,13 +47,13 @@ python main.py --scale 2 --model LBNet --save experiments/LBNet_X2
   LBNet-T：num_heads = 6
 
 # LBNet-T x4
-python main.py --scale 4 --model LBNet --save experiments/LBNet-T_X4
+python main.py --scale 4 --model LBNet-T --save experiments/LBNet-T_X4
 
 # LBNet-T x3
-python main.py --scale 3 --model LBNet --save experiments/LBNet-T_X3
+python main.py --scale 3 --model LBNet-T --save experiments/LBNet-T_X3
 
 # LBNet-T x2
-python main.py --scale 2 --model LBNet --save experiments/LBNet-T_X2
+python main.py --scale 2 --model LBNet-T --save experiments/LBNet-T_X2
 
 ```
 
