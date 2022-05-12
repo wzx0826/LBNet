@@ -97,6 +97,8 @@ def make_scheduler(opt, my_optimizer):
 def init_model(args):
     if args.model.find('LBNet') >= 0:
         args.n_feats = 32
+        args.num_heads = 8
     elif args.model.find('LBNet-T') >= 0:
         args.n_feats = 18
+        args.num_heads = 6
 
