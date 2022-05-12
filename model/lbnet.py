@@ -131,6 +131,7 @@ class LBNet(nn.Module):
         kernel_size = 3
         scale = args.scale[0]
         n_feat = args.n_feats
+        num_head = args.num_heads
 
         # RGB mean for DIV2K
         rgb_mean = (0.4488, 0.4371, 0.4040)
@@ -147,16 +148,16 @@ class LBNet(nn.Module):
         self.se2 = CALayer(channel=n_feat, reduction=16)
         self.se3 = CALayer(channel=n_feat, reduction=16)
 
-        self.attention = TransBlock(n_feat=n_feat, dim=n_feat*9)
-        self.attention2 = TransBlock(n_feat=n_feat, dim=n_feat*9)
+        self.attention = TransBlock(n_feat=n_feat, dim=n_feat*9, num_heads = num_head)
+        self.attention2 = TransBlock(n_feat=n_feat, dim=n_feat*9, num_heads = num_head)
 
         self.c1 = common.default_conv(6 * n_feat, n_feat, 1)
         self.c2 = common.default_conv(n_feat, n_feat, 3)
         self.c3 = common.default_conv(n_feat, n_feat, 3)
 
         modules_tail = [
-            conv(n_feat, 4 * 4 * 3, 3),
-            nn.PixelShuffle(4),
+            conv(n_feat, scale * scale * 3, 3),
+            nn.PixelShuffle(scale),
         ]
         self.tail = nn.Sequential(*modules_tail)
 
