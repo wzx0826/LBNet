@@ -86,7 +86,7 @@ args = parser.parse_args()
 
 utility.init_model(args)
 
-args.scale = [pow(2, s+1) for s in range(int(np.log2(args.scale)))]
+args.scale = [args.scale]
 
 for arg in vars(args):
     if vars(args)[arg] == 'True':
