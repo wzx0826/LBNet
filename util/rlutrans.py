@@ -68,7 +68,7 @@ class TransBlock(nn.Module):
                  drop_path=0., act_layer=nn.ReLU, norm_layer=nn.LayerNorm):
         super(TransBlock, self).__init__()
         self.dim = dim
-        self.atten = EffAttention(self.dim, num_heads=8, qkv_bias=False, qk_scale=None, \
+        self.atten = EffAttention(self.dim, num_heads=num_heads, qkv_bias=False, qk_scale=None, \
                              attn_drop=0., proj_drop=0.)
         self.norm1 = nn.LayerNorm(self.dim)
         self.mlp = Mlp(in_features=dim, hidden_features=dim//4, act_layer=act_layer, drop=drop)
