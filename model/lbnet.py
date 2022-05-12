@@ -156,8 +156,8 @@ class LBNet(nn.Module):
         self.c3 = common.default_conv(n_feat, n_feat, 3)
 
         modules_tail = [
-            conv(n_feat, 4 * 4 * 3, 3),
-            nn.PixelShuffle(4),
+            conv(n_feat, scale * scale * 3, 3),
+            nn.PixelShuffle(scale),
         ]
         self.tail = nn.Sequential(*modules_tail)
 
