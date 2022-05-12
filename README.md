@@ -44,7 +44,7 @@ python main.py --scale 3 --model LBNet --save experiments/LBNet_X3
 # LBNet x2
 python main.py --scale 2 --model LBNet --save experiments/LBNet_X2
 
-  LBNet-T：num_heads = 6
+  LBNet-T：num_heads = 6, 'dim//2' in util/rlutrans.py/EffAttention is changed to 'dim'
 
 # LBNet-T x4
 python main.py --scale 4 --model LBNet-T --save experiments/LBNet-T_X4
@@ -63,12 +63,12 @@ python main.py --scale 2 --model LBNet-T --save experiments/LBNet-T_X2
   LBNet: num_heads = 8
   
 # LBNet x4
-python main.py --scale 4 --model LBNet --pre_train test_model/LBNet/LBNet-X4.pt --test_only --save_results --n_feat 32 --data_test Set5
+python main.py --scale 4 --model LBNet --pre_train test_model/LBNet/LBNet-X4.pt --test_only --save_results --data_test Set5
 
-  LBNet-T：num_heads = 6
+  LBNet-T：num_heads = 6, 'dim//2' in util/rlutrans.py/EffAttention is changed to 'dim'
 
 # LBNet-T x4
-python main.py --scale 4 --model LBNet-T --pre_train test_model/LBNet-T/LBNet-T_X4.pt --test_only --save_results --n_feat 18 --data_test Set5
+python main.py --scale 4 --model LBNet-T --pre_train test_model/LBNet-T/LBNet-T_X4.pt --test_only --save_results --data_test Set5
 
 ```
 ## Performance
